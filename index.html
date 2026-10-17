@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRI RP — Три мира</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#080808;--panel:#121212;--red:#e50914;--line:#292929;--muted:#888}
+body{background:var(--bg);color:#fff;font-family:Arial,sans-serif;min-height:100vh}
+header{height:70px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--red)}
+.badge{font-size:10px;color:#aaa;letter-spacing:2px}
+main{max-width:1050px;margin:auto;padding:65px 20px}
+.hero{text-align:center;margin-bottom:45px}
+.tag{font-size:10px;letter-spacing:4px;color:var(--red);margin-bottom:15px}
+h1{font-size:clamp(32px,6vw,52px);font-weight:900;margin-bottom:15px}
+h1 span{color:var(--red)}
+.hero p{font-size:14px;line-height:1.7;color:var(--muted);max-width:470px;margin:auto}
+.worlds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.world{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:24px 20px;min-height:225px;display:flex;flex-direction:column;transition:.2s}
+.world:hover{border-color:var(--red);transform:translateY(-3px)}
+.number{font-size:11px;color:var(--red);letter-spacing:2px;margin-bottom:22px}
+.world h2{font-size:21px;margin-bottom:10px}
+.world p{font-size:12px;line-height:1.7;color:var(--muted);flex:1}
+.open{display:block;text-align:center;margin-top:24px;padding:12px;background:#1b1b1b;border:1px solid #333;border-radius:5px;color:white;text-decoration:none;font-size:12px;font-weight:bold}
+.open:hover{background:var(--red);border-color:var(--red)}
+.note{text-align:center;color:#555;font-size:11px;margin-top:28px;line-height:1.7}
+footer{border-top:1px solid var(--line);padding:23px;text-align:center;color:#555;font-size:10px;letter-spacing:1px}
+@media(max-width:700px){main{padding:45px 16px}.worlds{grid-template-columns:1fr}.world{min-height:185px}.number{margin-bottom:15px}.hero{margin-bottom:30px}header{padding:0 18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">TRI <span>RP</span></div>
+  <div class="badge">ТРИ МИРА · ОДИН ПРОЕКТ</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="tag">ЕДИНАЯ РОЛЕВАЯ ПЛАТФОРМА</div>
+    <h1>ТВОЯ ИСТОРИЯ.<br><span>ТВОЙ МИР.</span></h1>
+    <p>Три ролевых мира, разные возможности и собственная история. Выбирай направление и начинай свой путь.</p>
+  </section>
+
+  <section class="worlds">
+    <article class="world">
+      <div class="number">МИР 01</div>
+      <h2>GTA 5 RP</h2>
+      <p>Большой город, автомобили, криминал, бизнес и свободная жизнь.</p>
+      <a class="open" href="GTA5/index.html">ВЫБРАТЬ МИР →</a>
+    </article>
+
+    <article class="world">
+      <div class="number">МИР 02</div>
+      <h2>MAJESTIC RP</h2>
+      <p>Организации, экономика, имущество, автомобили и развитие персонажа.</p>
+      <a class="open" href="Majestic/index.html">ВЫБРАТЬ МИР →</a>
+    </article>
+
+    <article class="world">
+      <div class="number">МИР 03</div>
+      <h2>BLACK RUSSIA</h2>
+      <p>Российские автомобили, работы, полиция, больница и собственный бизнес.</p>
+      <a class="open" href="BlackRussia/index.html">ВЫБРАТЬ МИР →</a>
+    </article>
+  </section>
+
+  <p class="note">Все три направления — текстовые ролевые игры.<br>Проект независимый и не связан с правообладателями оригинальных игр.</p>
+</main>
+
+<footer>TRI RP © 2026 · НЕЗАВИСИМЫЙ ФАН-ПРОЕКТ</footer>
+</body>
+</html>
